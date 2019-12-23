@@ -14,7 +14,6 @@
 #define RIGHT_LENGTH 29
 
 using boost::filesystem::path;
-
 using std::cout;
 using std::endl;
 using std::map;
@@ -146,7 +145,6 @@ public:
 
     int number_of(std::string broker, int64_t ttf)
     {
-        //cout << broker << " " << ttf << endl << endl;
         for (unsigned i = 0; i < clear_map.size(); ++i){
             if ((clear_map[i][0] == broker) && (stoi(clear_map[i][1]) == ttf))
             {
@@ -155,8 +153,6 @@ public:
         }
         return 0;
     }
-
-
 
     path parent_dir;
     vector<vector<std::string>> clear_map;

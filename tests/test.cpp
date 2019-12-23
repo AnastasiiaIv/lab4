@@ -3,7 +3,6 @@
 #include <gtest/gtest.h>
 #include <header.hpp>
 
-
 TEST(Example, EmptyTest) {
     auto curr_path = boost::filesystem::current_path();
     std::string str_curr_path = curr_path.string();
